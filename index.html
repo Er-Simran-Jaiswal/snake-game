@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Snake</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <header>
+      <p class="tag">ARCADE CLASSIC</p>
+      <h1>NEON <span>SNAKE</span></h1>
+      <p class="subtitle">Eat. Grow. Survive.</p>
+    </header>
+
+    <section class="scoreboard">
+      <div class="score-card">
+        <span>SCORE</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="score-card">
+        <span>BEST</span>
+        <strong id="best">0</strong>
+      </div>
+    </section>
+
+    <div class="board-wrap">
+      <canvas id="board" width="400" height="400"
+        aria-label="Snake game board"></canvas>
+
+      <div id="overlay" class="overlay">
+        <h2 id="message">READY?</h2>
+        <p id="hint">Press Start to play</p>
+        <button id="startBtn">START GAME</button>
+      </div>
+    </div>
+
+    <p class="controls">
+      Use <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd>
+      or WASD to move
+    </p>
+    <p class="controls secondary">
+      Press SPACE to pause
+    </p>
+
+    <button id="restartBtn" class="restart">↻ RESTART</button>
+  </main>
+</body>
+</html>
